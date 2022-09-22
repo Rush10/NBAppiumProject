@@ -36,6 +36,8 @@ public class CalculatorDestroyer {
 	private MobileElement btnEight;
 	@AndroidFindBy(id = "com.google.android.calculator:id/digit_9")
 	private MobileElement btnNine;
+	@AndroidFindBy(id = "com.google.android.calculator:id/digit_0")//penambahan btnZero
+	private MobileElement btnZero;
 	
 	// locator aritmatika
 	@AndroidFindBy(id = "com.google.android.calculator:id/op_add")
@@ -55,7 +57,7 @@ public class CalculatorDestroyer {
 	@AndroidFindBy(id = "com.google.android.calculator:id/result_final")
 	private MobileElement resultCalc;
 
-	public int getNumber(int number) //(perbaikan) salah disini, tidak ada btnZero sehingga ketika ada angka random 0 maka akan masuk ke else dan menginputkan angka 9 ke calculator tetapi program java tetap menghitung nilai 0
+	public int getNumber(int number) //salah disini, tidak ada btnZero sehingga ketika ada angka random 0 maka akan masuk ke else dan menginputkan angka 9 ke calculator tetapi program java tetap menghitung nilai 0
 	{
 		if(number==1)
 		{			
@@ -105,29 +107,29 @@ public class CalculatorDestroyer {
 	{
 		if(operator==1)
 		{			
-			btnMultiply.click();
-			getNumber(number);
+			btnMultiply.click();System.out.println("*");
+			System.out.println(getNumber(number));
 			btnEquals.click();
 			result = result * (double)number;
 		}
 		else if(operator==2)
 		{
-			btnDivide.click();
-			getNumber(number);
+			btnDivide.click();System.out.println("/");
+			System.out.println(getNumber(number));
 			btnEquals.click();
 			result = result / (double)number;
 		}
 		else if(operator == 3)
 		{
-			btnAdd.click();
-			getNumber(number);
+			btnAdd.click();System.out.println("+");
+			System.out.println(getNumber(number));
 			btnEquals.click();
 			result = result + (double)number;
 		}
 		else
 		{
-			btnSubstract.click(); //(perbaikan) salah disini, sebelumnya btnAdd
-			getNumber(number);
+			btnAdd.click();System.out.println("+"); //salah disini, seharusnya btnSubstract
+			System.out.println(getNumber(number));
 			btnEquals.click();
 			result = result - (double)number;
 		}
@@ -139,33 +141,33 @@ public class CalculatorDestroyer {
 	{
 		if(operator==1)
 		{	
-			getNumber(numberX);
-			btnMultiply.click();
-			getNumber(numberY);
+			System.out.println(getNumber(numberX));
+			btnMultiply.click();System.out.println("*");
+			System.out.println(getNumber(numberY)); 
 			btnEquals.click();
 			doubExpected = (double)numberX * (double)numberY;
 		}
 		else if(operator==2)
 		{
-			getNumber(numberX);
-			btnDivide.click();
-			getNumber(numberY);
+			System.out.println(getNumber(numberX));
+			btnDivide.click();System.out.println("/");
+			System.out.println(getNumber(numberY)); 
 			btnEquals.click();
 			doubExpected = (double)numberX / (double)numberY;
 		}
 		else if(operator == 3)
 		{
-			getNumber(numberX);
-			btnAdd.click();
-			getNumber(numberY);
+			System.out.println(getNumber(numberX));
+			btnAdd.click();System.out.println("+");
+			System.out.println(getNumber(numberY)); 
 			btnEquals.click();
 			doubExpected = (double)numberX + (double)numberY;
 		}
 		else
 		{
-			getNumber(numberX);
-			btnSubstract.click();
-			getNumber(numberY);
+			System.out.println(getNumber(numberX));
+			btnSubstract.click();System.out.println("-");
+			System.out.println(getNumber(numberY)); 
 			btnEquals.click();
 			doubExpected = (double)numberX - (double)numberY;
 		}
@@ -179,8 +181,37 @@ public class CalculatorDestroyer {
 	public double getTxtResult() {
 		return Double.parseDouble(resultCalc.getText());
 	}
+	
+	public String getTxtResultInfinity() { //mencoba get text infinity calculator
+		return resultCalc.getText();
+	}
 
 	public void clear() {
 		btnClear.click();
+	}
+	
+	public void infinityActual() { //method untuk mencoba membandingkan infinity java dan calculator google
+		System.out.println("ACTUAL");
+		btnEight.click();System.out.println("Nilai 1: 8");
+		btnDivide.click();System.out.println("Operator: /");
+		btnZero.click();System.out.println("Nilai 2: 0");
+		btnEquals.click();
+	}
+	
+	public double infinityExpected() { //method untuk mencoba membandingkan infinity java dan calculator google
+		double dDevide = 0.0;
+		double dValue1 = 8.0;
+		int intValue2 = 0;
+		
+		System.out.println("EXPECTED");
+		System.out.println("Nilai 1:" + dValue1);
+		System.out.println("Operator: /");
+		System.out.println("Nilai 2:" + intValue2);
+		
+		dDevide = dValue1/intValue2;
+		
+		System.out.println("Hasil Expected:" + dDevide);
+		
+		return dDevide;
 	}
 }

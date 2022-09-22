@@ -31,8 +31,8 @@ public class TestCalculatorDestroyer {
 	private int intNumNext = 0;
 	private int intLoopCalc =0;
 	private int intOperator = 0;
-	private double doubResultExpected = 0.0;
-	private double doubResultActual = 0.0;
+//	private double doubResultExpected = 0.0;
+//	private double doubResultActual = 0.0;
 	private Random rand ;
 	
 	@BeforeTest
@@ -87,11 +87,14 @@ public class TestCalculatorDestroyer {
 	@Test(priority = 0,dataProvider="DataProviderFirst")
 	public void testPost(String x) throws InterruptedException
 	{		
+		double doubResultExpected = 0.0;
+		double doubResultActual = 0.0;
 		StringBuffer strTambah = new StringBuffer(""); 
 		String strOperator = "";
 		System.out.println("Loop ke-" + x);
-//		intLoopCalc = rand.nextInt(15);
-		intLoopCalc = 3;
+		intLoopCalc = rand.nextInt(3);
+		System.out.println("Perulangan:" + intLoopCalc);
+//		intLoopCalc = 5; //percobaan
 		intNumX = rand.nextInt(10);
 		for(int i=0;i<intLoopCalc;i++)
 		{
@@ -118,21 +121,32 @@ public class TestCalculatorDestroyer {
 			
 			if(i==0)
 			{
-				strTambah.append(intNumX + "," + strOperator + ",");
+				strTambah.append(intNumX + strOperator + intNumNext);
 				doubResultExpected = calcDestroyer.initCalc(intNumX,intNumNext, intOperator);
 			}
 			else
 			{
-				strTambah.append(intNumNext + "," + strOperator + ",");
+				strTambah.append("="+ doubResultExpected + strOperator + intNumNext);
 				doubResultExpected = calcDestroyer.getResult(doubResultExpected,intNumNext,intOperator);
 			}
 		}
 		calcDestroyer.doEqualz();
 		doubResultActual = calcDestroyer.getTxtResult();
-		System.out.println(strTambah);
+		System.out.println("Java operator: " + strTambah);
+//		System.out.println("Java operator: "strTambah);
 		System.out.println("ACTUAL : "+doubResultActual+" --- EXPECTED : "+doubResultExpected);
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 		assertEquals(doubResultActual, doubResultExpected);
 		calcDestroyer.clear();
 	}
+	
+//	@Test
+//	public void testPostInfinity() //coba infinity
+//	{		
+//		calcDestroyer.infinityActual();
+//		
+//		String txtResultActual = calcDestroyer.getTxtResultInfinity();
+//		
+//		assertEquals(txtResultActual, calcDestroyer.infinityExpected());
+//	}
 }
