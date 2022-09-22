@@ -96,7 +96,7 @@ public class TestCalculatorDestroyer {
 		for(int i=0;i<intLoopCalc;i++)
 		{
 			intNumNext = rand.nextInt(10);
-			intOperator = rand.nextInt(5);
+			intOperator = rand.nextInt(5); //(perbaikan) salah informasi disini, randomnya mulai dari angka 0-4 padahal operator dengan angka 4 tidak ada sehingga angka 0 & 4 akan didefinisikan ke else atau sebagai substract(-).
 //			public double getResult(double result,int number, int operator)
 			
 			if(intOperator==1)

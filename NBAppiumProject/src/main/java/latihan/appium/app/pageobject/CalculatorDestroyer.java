@@ -55,7 +55,7 @@ public class CalculatorDestroyer {
 	@AndroidFindBy(id = "com.google.android.calculator:id/result_final")
 	private MobileElement resultCalc;
 
-	public int getNumber(int number)
+	public int getNumber(int number) //(perbaikan) salah disini, tidak ada btnZero sehingga ketika ada angka random 0 maka akan masuk ke else dan menginputkan angka 9 ke calculator tetapi program java tetap menghitung nilai 0
 	{
 		if(number==1)
 		{			
@@ -101,7 +101,7 @@ public class CalculatorDestroyer {
 		}
 	}
 	
-	public double getResult(double result,int number, int operator)
+	public double getResult(double result,int number, int operator)  
 	{
 		if(operator==1)
 		{			
@@ -126,7 +126,7 @@ public class CalculatorDestroyer {
 		}
 		else
 		{
-			btnSubstract.click();
+			btnSubstract.click(); //(perbaikan) salah disini, sebelumnya btnAdd
 			getNumber(number);
 			btnEquals.click();
 			result = result - (double)number;
