@@ -5,7 +5,7 @@
     <classes>
       <class name="latihan.appium.app.runner.TestCalculatorDestroyer">
         <methods>
-          <include name="testPost" invocation-numbers="0 3"/>
+          <include name="testPost"/>
           <include name="befTest"/>
         </methods>
       </class> <!-- latihan.appium.app.runner.TestCalculatorDestroyer -->

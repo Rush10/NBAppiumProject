@@ -31,8 +31,8 @@ public class TestCalculatorDestroyer {
 	private int intNumNext = 0;
 	private int intLoopCalc =0;
 	private int intOperator = 0;
-//	private double doubResultExpected = 0.0;
-//	private double doubResultActual = 0.0;
+	private double doubResultExpected = 0.0;
+	private double doubResultActual = 0.0;
 	private Random rand ;
 	
 	@BeforeTest
@@ -87,14 +87,14 @@ public class TestCalculatorDestroyer {
 	@Test(priority = 0,dataProvider="DataProviderFirst")
 	public void testPost(String x) throws InterruptedException
 	{		
-		double doubResultExpected = 0.0;
-		double doubResultActual = 0.0;
+//		double doubResultExpected = 0.0;
+//		double doubResultActual = 0.0;
 		StringBuffer strTambah = new StringBuffer(""); 
 		String strOperator = "";
 		System.out.println("Loop ke-" + x);
-		intLoopCalc = rand.nextInt(3);
-		System.out.println("Perulangan:" + intLoopCalc);
+		intLoopCalc = rand.nextInt(3);//coba perulangan kecil
 //		intLoopCalc = 5; //percobaan
+		System.out.println("Perulangan:" + intLoopCalc);
 		intNumX = rand.nextInt(10);
 		for(int i=0;i<intLoopCalc;i++)
 		{
@@ -139,6 +139,27 @@ public class TestCalculatorDestroyer {
 		assertEquals(doubResultActual, doubResultExpected);
 		calcDestroyer.clear();
 	}
+	
+//	@Test
+//	public void testPrintTxtActual() //coba print actual
+//	{		
+//		String a = "-2";
+//		System.out.println(Double.parseDouble(a));
+//		//=============
+//		
+//		int a = 5, b = 6;
+//		
+//		System.out.println("Hasil java:" + ((double)a-(double)b));
+//		System.out.println("Log actual:");
+//		calcDestroyer.initCalc(a,b,0);
+//		
+//		System.out.println(calcDestroyer.getTxtResult()); 
+//		calcDestroyer.clear();
+//		System.out.println("calculator sudah clear");
+//		
+//		System.out.println(calcDestroyer.getTxtResultInfinity()); 
+//		System.out.println(calcDestroyer.getTxtResult()); 
+//	}
 	
 //	@Test
 //	public void testPostInfinity() //coba infinity
