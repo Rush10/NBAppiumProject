@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-24T21:18:17 ICT" name="Default suite" finished-at="2022-09-24T21:19:55 ICT" duration-ms="97901">
+  <suite started-at="2022-09-24T21:55:49 ICT" name="Default suite" finished-at="2022-09-24T21:57:40 ICT" duration-ms="111197">
     <groups>
     </groups>
-    <test started-at="2022-09-24T21:18:17 ICT" name="Default test" finished-at="2022-09-24T21:19:55 ICT" duration-ms="97901">
+    <test started-at="2022-09-24T21:55:49 ICT" name="Default test" finished-at="2022-09-24T21:57:40 ICT" duration-ms="111197">
       <class name="ujian.ujiankelima.runner.TestGoogleNews">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:17 ICT" name="setUp" finished-at="2022-09-24T21:18:24 ICT" duration-ms="6211" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:55:49 ICT" name="setUp" finished-at="2022-09-24T21:56:05 ICT" duration-ms="16254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:24 ICT" name="pageObject" finished-at="2022-09-24T21:18:24 ICT" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:56:05 ICT" name="pageObject" finished-at="2022-09-24T21:56:06 ICT" duration-ms="447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObject -->
-        <test-method signature="testGoToPageHeadLines()[pri:1, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:24 ICT" name="testGoToPageHeadLines" finished-at="2022-09-24T21:18:31 ICT" duration-ms="7080" status="PASS">
+        <test-method signature="testGoToPageHeadLines()[pri:1, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:56:06 ICT" name="testGoToPageHeadLines" finished-at="2022-09-24T21:56:14 ICT" duration-ms="7902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoToPageHeadLines -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:31 ICT" name="pageObject" finished-at="2022-09-24T21:18:31 ICT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:56:14 ICT" name="pageObject" finished-at="2022-09-24T21:56:14 ICT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObject -->
-        <test-method signature="testGoToPageFollowing()[pri:2, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:31 ICT" name="testGoToPageFollowing" finished-at="2022-09-24T21:19:05 ICT" duration-ms="34120" status="PASS">
+        <test-method signature="testGoToPageFollowing()[pri:2, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:56:14 ICT" name="testGoToPageFollowing" finished-at="2022-09-24T21:56:48 ICT" duration-ms="34407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoToPageFollowing -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:05 ICT" name="pageObject" finished-at="2022-09-24T21:19:05 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:56:48 ICT" name="pageObject" finished-at="2022-09-24T21:56:48 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObject -->
-        <test-method signature="testGoToPageNewsstand()[pri:3, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:05 ICT" name="testGoToPageNewsstand" finished-at="2022-09-24T21:19:41 ICT" duration-ms="35791" status="PASS">
+        <test-method signature="testGoToPageNewsstand()[pri:3, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:56:48 ICT" name="testGoToPageNewsstand" finished-at="2022-09-24T21:57:24 ICT" duration-ms="36417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoToPageNewsstand -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:41 ICT" name="pageObject" finished-at="2022-09-24T21:19:41 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:57:24 ICT" name="pageObject" finished-at="2022-09-24T21:57:24 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObject -->
-        <test-method signature="testGoToPageSetting()[pri:4, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:41 ICT" name="testGoToPageSetting" finished-at="2022-09-24T21:19:49 ICT" duration-ms="8218" status="PASS">
+        <test-method signature="testGoToPageSetting()[pri:4, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:57:24 ICT" name="testGoToPageSetting" finished-at="2022-09-24T21:57:33 ICT" duration-ms="8620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoToPageSetting -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:49 ICT" name="pageObject" finished-at="2022-09-24T21:19:49 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:57:33 ICT" name="pageObject" finished-at="2022-09-24T21:57:33 ICT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObject -->
-        <test-method signature="testGoToHelp()[pri:5, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:49 ICT" name="testGoToHelp" finished-at="2022-09-24T21:19:55 ICT" duration-ms="6104" status="PASS">
+        <test-method signature="testGoToHelp()[pri:5, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:57:33 ICT" name="testGoToHelp" finished-at="2022-09-24T21:57:39 ICT" duration-ms="6304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoToHelp -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:55 ICT" name="closeApp" finished-at="2022-09-24T21:19:55 ICT" duration-ms="236" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@663c9e7a]" started-at="2022-09-24T21:57:39 ICT" name="closeApp" finished-at="2022-09-24T21:57:40 ICT" duration-ms="745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

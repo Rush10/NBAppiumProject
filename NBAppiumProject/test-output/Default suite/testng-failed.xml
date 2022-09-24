@@ -5,8 +5,12 @@
     <classes>
       <class name="ujian.ujiankelima.runner.TestGoogleNews">
         <methods>
+          <include name="testGoToPageNewsstand"/>
+          <include name="testGoToPageHeadLines"/>
+          <include name="testGoToHelp"/>
           <include name="setUp"/>
           <include name="testGoToPageSetting"/>
+          <include name="testGoToPageFollowing"/>
           <include name="pageObject"/>
           <include name="closeApp"/>
         </methods>
