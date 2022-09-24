@@ -1,157 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-23T17:26:45 ICT" name="Default suite" finished-at="2022-09-23T17:26:45 ICT" duration-ms="542">
+  <suite started-at="2022-09-24T21:18:17 ICT" name="Default suite" finished-at="2022-09-24T21:19:55 ICT" duration-ms="97901">
     <groups>
     </groups>
-    <test started-at="2022-09-23T17:26:45 ICT" name="Default test" finished-at="2022-09-23T17:26:45 ICT" duration-ms="542">
-      <class name="latihan.appium.app.runner.TestCalculatorDestroyer">
-        <test-method is-config="true" signature="befTest()[pri:0, instance:latihan.appium.app.runner.TestCalculatorDestroyer@712625fd]" started-at="2022-09-23T17:26:45 ICT" name="befTest" finished-at="2022-09-23T17:26:45 ICT" duration-ms="483" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-26B5BFK', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-26B5BFK', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
-at java.base/java.util.Optional.orElseGet(Optional.java:369)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
-at latihan.appium.app.runner.TestCalculatorDestroyer.befTest(TestCalculatorDestroyer.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
-at org.testng.TestRunner.beforeRun(TestRunner.java:632)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+    <test started-at="2022-09-24T21:18:17 ICT" name="Default test" finished-at="2022-09-24T21:19:55 ICT" duration-ms="97901">
+      <class name="ujian.ujiankelima.runner.TestGoogleNews">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:17 ICT" name="setUp" finished-at="2022-09-24T21:18:24 ICT" duration-ms="6211" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- befTest -->
-        <test-method signature="testPost(java.lang.String)[pri:0, instance:latihan.appium.app.runner.TestCalculatorDestroyer@712625fd]" started-at="2022-09-23T17:26:45 ICT" name="testPost" data-provider="DataProviderFirst" finished-at="2022-09-23T17:26:45 ICT" duration-ms="0" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NullPointerException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-at latihan.appium.app.runner.TestCalculatorDestroyer.dataDrivenPost(TestCalculatorDestroyer.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:24 ICT" name="pageObject" finished-at="2022-09-24T21:18:24 ICT" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPost -->
-      </class> <!-- latihan.appium.app.runner.TestCalculatorDestroyer -->
+        </test-method> <!-- pageObject -->
+        <test-method signature="testGoToPageHeadLines()[pri:1, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:24 ICT" name="testGoToPageHeadLines" finished-at="2022-09-24T21:18:31 ICT" duration-ms="7080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoToPageHeadLines -->
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:31 ICT" name="pageObject" finished-at="2022-09-24T21:18:31 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageObject -->
+        <test-method signature="testGoToPageFollowing()[pri:2, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:18:31 ICT" name="testGoToPageFollowing" finished-at="2022-09-24T21:19:05 ICT" duration-ms="34120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoToPageFollowing -->
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:05 ICT" name="pageObject" finished-at="2022-09-24T21:19:05 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageObject -->
+        <test-method signature="testGoToPageNewsstand()[pri:3, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:05 ICT" name="testGoToPageNewsstand" finished-at="2022-09-24T21:19:41 ICT" duration-ms="35791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoToPageNewsstand -->
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:41 ICT" name="pageObject" finished-at="2022-09-24T21:19:41 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageObject -->
+        <test-method signature="testGoToPageSetting()[pri:4, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:41 ICT" name="testGoToPageSetting" finished-at="2022-09-24T21:19:49 ICT" duration-ms="8218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoToPageSetting -->
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:49 ICT" name="pageObject" finished-at="2022-09-24T21:19:49 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageObject -->
+        <test-method signature="testGoToHelp()[pri:5, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:49 ICT" name="testGoToHelp" finished-at="2022-09-24T21:19:55 ICT" duration-ms="6104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoToHelp -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:ujian.ujiankelima.runner.TestGoogleNews@644baf4a]" started-at="2022-09-24T21:19:55 ICT" name="closeApp" finished-at="2022-09-24T21:19:55 ICT" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- ujian.ujiankelima.runner.TestGoogleNews -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="latihan.appium.app.runner.TestCalculatorDestroyer">
+      <class name="ujian.ujiankelima.runner.TestGoogleNews">
         <methods>
-          <include name="testPost"/>
-          <include name="befTest"/>
+          <include name="setUp"/>
+          <include name="testGoToPageSetting"/>
+          <include name="pageObject"/>
+          <include name="closeApp"/>
         </methods>
-      </class> <!-- latihan.appium.app.runner.TestCalculatorDestroyer -->
+      </class> <!-- ujian.ujiankelima.runner.TestGoogleNews -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
